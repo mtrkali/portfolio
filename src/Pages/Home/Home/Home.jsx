@@ -18,7 +18,7 @@ const Home = () => {
     }, [])
     return (
         <div className=' min-h-screen w-full md:w-[98%] lg:w-[98%] mx-auto mt-3'>
-            <div className='flex flex-col md:flex-row lg:flex-row gap-5 items-center md:items-start lg:items-start justify-around bg-amber-500/10 relative p-3'>
+            <div className='flex flex-col md:flex-row lg:flex-row gap-5 items-center md:items-start lg:items-start justify-around bg-amber-500/10 relative p-3 overflow-hidden'>
                 <CodeBackground></CodeBackground>
                 <div className='w-full md:w-1/2 lg:w-1/2 rounded-lg mt-20 text-center lg:text-start'>
                     <h1 className="text-3xl font-bold p-2"><strong>Hey, <span className='text-red-500'>I</span> am <span className='text-amber-500'>developer</span></strong></h1>
@@ -50,7 +50,7 @@ const Home = () => {
                                 variants={containerVarients}
                                 initial="hidden"
                                 animate="visible"
-                                className="flex items-center gap-4 mt-5 justify-center "
+                                className="flex flex-wrap items-center gap-4 mt-5 justify-center "
                             >
                                 {tectStack.map((tech) => (
                                     <motion.img

@@ -11,7 +11,7 @@ const FallingLeaf = ({ delay, left }) => {
             style={{left}}
             initial={{y: -40, rotate:0, opacity: 0}}
             animate={{
-                y:'290%',
+                y:'120vh',
                 rotate: 360,
                 opacity: 1,
             }}
