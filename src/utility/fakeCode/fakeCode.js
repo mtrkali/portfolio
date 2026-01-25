@@ -1,0 +1,74 @@
+const fakeCode = 
+`
+const Navbar = () => {
+  return (
+    <div className="navbar bg-base-100 shadow-lg shadow-slate-300 px-4 w-full md:w-full lg:w-[98%] border border-t-0 rounded-lg mx-auto">
+      {/* Left side */}
+      <div className="navbar-start">
+        {/* Mobile menu button */}
+        <div className="dropdown">
+          <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </label>
+
+          {/* Mobile menu */}
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Contact</a></li>
+            <li className="mt-2">
+              <a className="btn btn-sm btn-outline">Login</a>
+            </li>
+            <li>
+              <a className="btn btn-sm btn-primary text-white">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+
+        {/* Logo */}
+        <a className="btn btn-ghost text-xl font-bold">
+          <span className="text-red-500">M</span>trk<span className="text-primary">.</span>
+        </a>
+      </div>
+
+      {/* Center menu (Desktop) */}
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1 font-medium">
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Projects</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+      </div>
+
+      {/* Right side */}
+      <div className="navbar-end hidden lg:flex gap-2">
+        <a className="btn btn-outline btn-sm">Login</a>
+        <a className="btn btn-primary btn-sm text-white">Sign Up</a>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
+
+`
+
+export default fakeCode;
