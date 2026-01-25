@@ -7,15 +7,25 @@ import { containerVarients, itemVarients, tectStack } from '../../../utility/tec
 
 const Home = () => {
     const [typingDone, setTypingDone] = useState(false)
+    const [btnDone, setBtnDone] = useState(false)
     const text = "i am full-stack developer who loves building things for the web. From responsible user interfaces to secure and efficient backends. i focus on performance, clean code, and great user experience"
 
     useEffect(() => {
         const typingTime = text.length * 90
         const timer = setTimeout(() => {
             setTypingDone(true)
-        }, typingTime + 5000)
+        }, typingTime + 4300)
         return () => clearTimeout(timer)
     }, [])
+
+    useEffect(()=>{
+        if(!typingDone) return;
+        const btnTimer = setTimeout(()=>{
+            setBtnDone(true)
+        },800)
+        return () => clearTimeout(btnTimer);
+    },[typingDone])
+
     return (
         <div className=' min-h-screen w-full md:w-[98%] lg:w-[98%] mx-auto mt-3'>
             <div className='flex flex-col md:flex-row lg:flex-row gap-5 items-center md:items-start lg:items-start justify-around bg-amber-500/10 relative p-3 overflow-hidden'>
@@ -44,8 +54,8 @@ const Home = () => {
                     </div>
 
                     <div className='mt-5'>
-                        {typingDone && <h1 className="text-2xl">we also work with</h1>}
-                        {(typingDone &&
+                        {btnDone && <h1 className="text-2xl">we also work with</h1>}
+                        {(btnDone &&
                             <motion.div
                                 variants={containerVarients}
                                 initial="hidden"
