@@ -11,10 +11,10 @@ const Home = () => {
     const text = "i am full-stack developer who loves building things for the web. From responsible user interfaces to secure and efficient backends. i focus on performance, clean code, and great user experience"
 
     useEffect(() => {
-        const typingTime = text.length * 90
+        const typingTime = text.length * 20
         const timer = setTimeout(() => {
             setTypingDone(true)
-        }, typingTime + 4300)
+        }, typingTime + 2300)
         return () => clearTimeout(timer)
     }, [])
 
@@ -31,13 +31,13 @@ const Home = () => {
             <div className='flex flex-col md:flex-row lg:flex-row gap-5 items-center md:items-start lg:items-start justify-around bg-amber-500/10 relative p-3 overflow-hidden'>
                 <CodeBackground></CodeBackground>
                 <div className='w-full md:w-1/2 lg:w-1/2 rounded-lg mt-20 text-center lg:text-start'>
-                    <h1 className="text-3xl font-bold p-2"><strong>Hey, <span className='text-red-500'>I</span> am <span className='text-amber-500'>developer</span></strong></h1>
+                    <h1 className="text-3xl font-bold p-2"><strong>Hey, <span className='text-red-500'>I</span> am <span className='text-amber-500'>Mern-Stack developer</span></strong></h1>
                     <p className='w-full md:w-11/12 lg:w-11/12 p-2 '>
                         <Typewriter
                             words={[text]}
                             loop={1}          // 0 = infinite
                             cursor={false}
-                            typeSpeed={90}
+                            typeSpeed={20}
                             deleteSpeed={0}
                             delaySpeed={1500}
                         />
@@ -54,7 +54,7 @@ const Home = () => {
                     </div>
 
                     <div className='mt-5'>
-                        {btnDone && <h1 className="text-2xl">we also work with</h1>}
+                        {btnDone && <h1 className="text-2xl animate-pulse">we also work with</h1>}
                         {(btnDone &&
                             <motion.div
                                 variants={containerVarients}
@@ -75,14 +75,14 @@ const Home = () => {
                         )}
                     </div>
                 </div>
-                <div className=' w-full max-w-md shadow-2xl rounded-full bg-black/60 shadow-amber-600 relative'>
+                <div className=' w-full max-w-md shadow-2xl rounded-full bg-black/30 shadow-amber-600 relative'>
                     {
                         typingDone &&
                         <>
                             <FallingLeaf delay={0} left="0%" />
-                            <FallingLeaf delay={0.3} left="20%" />
-                            <FallingLeaf delay={0.6} left="50%" />
-                            <FallingLeaf delay={0.9} left="75%" />
+                            <FallingLeaf delay={1.5} left="20%" />
+                            <FallingLeaf delay={3.0} left="50%" />
+                            <FallingLeaf delay={4.5} left="75%" />
                         </>
                     }
                     <img src="https://i.ibb.co.com/WvT1Mxrz/Whats-App-Image-2026-01-20-at-5-50-05-PM.png" className='w-full h-auto rounded-full' alt="" />

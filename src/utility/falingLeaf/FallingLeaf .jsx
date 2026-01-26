@@ -16,7 +16,7 @@ const FallingLeaf = ({ delay, left }) => {
                 opacity: 1,
             }}
             transition={{
-                duration: 4.5,
+                duration: 6.5,
                 delay,
                 ease: 'easeInOut'
             }}

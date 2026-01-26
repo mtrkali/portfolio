@@ -25,12 +25,12 @@ const Navbar = () => {
           {/* Mobile menu */}
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-black/30  text-amber-400 rounded-box w-52"
           >
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Projects</a></li>
-            <li><a>Contact</a></li>
+            <li className="hover:bg-base-100"><a>Home</a></li>
+            <li className="hover:bg-base-100"><a>About</a></li>
+            <li className="hover:bg-base-100"><a>Projects</a></li>
+            <li className="hover:bg-base-100"><a>Contact</a></li>
             <li className="mt-2">
               <a className="btn btn-sm btn-outline">Login</a>
             </li>
