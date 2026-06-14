@@ -9,15 +9,15 @@ import postgreSQL from '../../assets/images/posgreSQL.png';
 import firebase from '../../assets/images/firebase.png';
 
 export const tectStack = [
-    {id: 1, src:html ,name: 'HTML'},
-    {id: 2, src:css, name: 'CSS'},
-    {id: 3, src:tailwind, name: 'tailwindcss'},
-    {id: 4, src:javascript, name: 'javascript'},
-    {id: 5, src:node, name: 'node'},
-    {id: 6, src:express, name: 'express'},
-    {id: 7, src: mongodb, name: 'mongodb'},
-    {id: 8, src: postgreSQL, name: 'postgreSQL'},
-    {id: 9, src: firebase, name: 'firebase'},
+    {id: 1, level:65, src:html ,name: 'HTML'},
+    {id: 2, level:50, src:css, name: 'CSS'},
+    {id: 3, level:65, src:tailwind, name: 'tailwindcss'},
+    {id: 4, level:60, src:javascript, name: 'javascript'},
+    {id: 5, level:50, src:node, name: 'node'},
+    {id: 6, level:40, src:express, name: 'express'},
+    {id: 7, level:55, src: mongodb, name: 'mongodb'},
+    {id: 8, level:70, src: firebase, name: 'firebase'},
+    {id: 9, level:55, src: postgreSQL, name: 'postgreSQL'},
 ]
 
 export const containerVarients = {

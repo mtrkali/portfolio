@@ -1,6 +1,29 @@
+import { useEffect, useState } from "react";
+
 const Navbar = () => {
+  const [showNavbar, setShowNavbar] = useState(true);
+  let scrollTimer = null;
+  useEffect(()=>{
+    const handleScroll = () =>{
+        setShowNavbar(false);
+
+        if(scrollTimer){
+          clearTimeout(scrollTimer);
+        }
+
+        scrollTimer = setTimeout(()=>{
+          setShowNavbar(true);
+        }, 300)
+      };
+
+      window.addEventListener("scroll", handleScroll);
+      return ()=>{
+        window.removeEventListener("scroll", handleScroll);
+        if(scrollTimer) clearTimeout(scrollTimer);
+      };
+  },[])
   return (
-    <div className="navbar shadow-lg shadow-slate-300 px-4 w-full md:w-full lg:w-[98%] border border-t-0 rounded-lg mx-auto bg-white/80 text-black sticky inset-0 z-1">
+    <div className={`navbar shadow-slate-300 px-4 w-full md:w-full lg:w-[58%] border border-t-0 rounded-full mx-auto bg-white/60 text-black sticky inset-0 z-1 transition-transform duration-300 ${showNavbar? "translate-y-0":"-translate-y-full"}`}>
       {/* Left side */}
       <div className="navbar-start">
         {/* Mobile menu button */}
@@ -42,7 +65,7 @@ const Navbar = () => {
 
         {/* Logo */}
         <a className="btn btn-ghost text-xl font-bold">
-          <span className="text-red-500">M</span>trk<span className="text-primary">.</span>
+          <span className="text-slate-500">M</span>trk<span className="text-primary">.</span>
         </a>
       </div>
 
@@ -58,8 +81,7 @@ const Navbar = () => {
 
       {/* Right side */}
       <div className="navbar-end hidden lg:flex gap-2">
-        <a className="btn btn-outline btn-sm  hover:scale-105">Login</a>
-        <a className="btn btn-primary btn-sm  hover:scale-105 text-white">Sign Up</a>
+        
       </div>
     </div>
   );
