@@ -68,7 +68,10 @@ const Projects = () => {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-black via-gray-950 to-black text-white">
+    <section
+      data-aos="zoom-in"
+      className="py-24 bg-gradient-to-b from-black via-gray-950 to-black text-white"
+    >
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
