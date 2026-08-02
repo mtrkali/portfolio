@@ -1,29 +1,32 @@
 import { useEffect, useState } from "react";
+import hero from '../../../assets/images//WhatsApp Image 2026-01-20 at 5.50.05 PM.jpeg'
+import ThemeButton from "../../../components/ThemButton";
+import ThemeToggle from "../../../context/ThemeToggle";
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(true);
   let scrollTimer = null;
-  useEffect(()=>{
-    const handleScroll = () =>{
-        setShowNavbar(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowNavbar(false);
 
-        if(scrollTimer){
-          clearTimeout(scrollTimer);
-        }
+      if (scrollTimer) {
+        clearTimeout(scrollTimer);
+      }
 
-        scrollTimer = setTimeout(()=>{
-          setShowNavbar(true);
-        }, 300)
-      };
+      scrollTimer = setTimeout(() => {
+        setShowNavbar(true);
+      }, 300)
+    };
 
-      window.addEventListener("scroll", handleScroll);
-      return ()=>{
-        window.removeEventListener("scroll", handleScroll);
-        if(scrollTimer) clearTimeout(scrollTimer);
-      };
-  },[])
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      if (scrollTimer) clearTimeout(scrollTimer);
+    };
+  }, [])
   return (
-    <div className={`navbar shadow-slate-300 px-4 w-full md:w-full lg:w-[58%] border border-t-0 rounded-full mx-auto bg-white/60 text-black sticky inset-0 z-1 transition-transform duration-300 ${showNavbar? "translate-y-0":"-translate-y-full"}`}>
+    <div className={`navbar shadow-slate-300 px-4 w-full md:w-full lg:w-[58%] border border-t-0 rounded-full mx-auto bg-white/60 text-black sticky inset-0 z-1 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
       {/* Left side */}
       <div className="navbar-start">
         {/* Mobile menu button */}
@@ -50,10 +53,10 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 z-1 p-2 shadow bg-black/30  text-amber-400 rounded-box w-52"
           >
-            <li className="hover:bg-base-100"><a>Home</a></li>
-            <li className="hover:bg-base-100"><a>About</a></li>
-            <li className="hover:bg-base-100"><a>Projects</a></li>
-            <li className="hover:bg-base-100"><a>Contact</a></li>
+            <li className="hover:bg-base-100"><a href="#home">Home</a></li>
+            <li className="hover:bg-base-100"><a href="#about">About</a></li>
+            <li className="hover:bg-base-100"><a href="#projects">Projects</a></li>
+            <li className="hover:bg-base-100"><a href="#skills">skills</a></li>
             <li className="mt-2">
               <a className="btn btn-sm btn-outline">Login</a>
             </li>
@@ -72,16 +75,18 @@ const Navbar = () => {
       {/* Center menu (Desktop) */}
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-medium">
-          <li className="hover:scale-110 hover:bg-green-200"><a>Home</a></li>
-          <li className="hover:scale-110 hover:bg-green-200"><a>About</a></li>
-          <li className="hover:scale-110 hover:bg-green-200"><a>Projects</a></li>
-          <li className="hover:scale-110 hover:bg-green-200"><a>Contact</a></li>
+          <li className="hover:scale-110 hover:bg-green-200 rounded"><a href="/">Home</a></li>
+          <li className="hover:scale-110 hover:bg-green-200 rounded"><a href="#about">About</a></li>
+          <li className="hover:scale-110 hover:bg-green-200 rounded"><a href="#projects">Projects</a></li>
+          <li className="hover:scale-110 hover:bg-green-200 rounded"><a href="#skills">skills</a></li>
         </ul>
       </div>
 
       {/* Right side */}
       <div className="navbar-end hidden lg:flex gap-2">
-        
+        <nav className="flex justify-between items-center">
+          <ThemeToggle />
+        </nav>
       </div>
     </div>
   );

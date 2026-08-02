@@ -37,7 +37,7 @@ const Home = () => {
       data-aos="fade-up"
       className=" min-h-screen w-full md:w-[98%] lg:w-[98%] mx-auto mt-3 "
     >
-      <div className="flex flex-col md:flex-row lg:flex-row gap-5 items-center md:items-start lg:items-start justify-around bg-amber-500/10 relative p-3 overflow-hidden">
+      <div className="flex flex-col md:flex-row lg:flex-row gap-5 items-center md:items-start lg:items-start justify-around bg-amber-500/10 relative p-3 overflow-hidden group">
         <CodeBackground></CodeBackground>
         <div className="w-full md:w-1/2 lg:w-1/2 rounded-lg mt-20 text-center lg:text-start">
           <h1 className="text-3xl font-bold p-2">
@@ -63,12 +63,22 @@ const Home = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
               >
-                <button className="btn hover:scale-105 bg-amber-800 text-xs mr-2">
+                <button
+                onClick={() => 
+                  window.open("https://drive.google.com/uc?export=download&id=1PNIxwiegtnPZwAbNFSAJn_SeWMT9RKGp", "_blank")
+                }
+                 className="btn hover:scale-105 bg-amber-800 text-xs mr-2">
                   Download CV
                 </button>
-                <button className="btn hover:scale-105 btn-outline border-amber-800 text-xs">
-                  RESUME
+
+                <button
+                onClick={() => 
+                  window.open("https://drive.google.com/uc?export=download&id=1Ga3eE31Cc2fOFLT0syfeTRCNjuosInLq", "_blank")
+                }
+                 className="btn hover:scale-105 bg-amber-800 text-xs mr-2">
+                  Resume
                 </button>
+                
               </motion.div>
             )}
           </div>
@@ -111,7 +121,7 @@ const Home = () => {
           )}
           <img
             src="https://i.ibb.co.com/WvT1Mxrz/Whats-App-Image-2026-01-20-at-5-50-05-PM.png"
-            className="w-full h-auto rounded-full"
+            className="w-full h-auto rounded-full group-hover:scale-110 transition-transform duration-500 -translate-y-8 group-hover: scale-x-[-1]"
             alt=""
           />
         </div>

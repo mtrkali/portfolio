@@ -4,8 +4,9 @@ import Navbar from "../Pages/Sahared/Navbar/Navbar";
 import AboutMe from "../Pages/Home/AboutMe/AboutMe";
 import Skills from "../Pages/Home/Skills/Skills";
 import Aos from "aos";
-import Projects from "../Pages/Home/Projects/Projects";
 import Footer from "../Pages/Home/Footer/Footer";
+import ScrollTop from "../Pages/Sahared/ScrollTop";
+import { ProjectMain } from "../Pages/Home/Projects/ProjectMain";
 
 const RootLayouts = () => {
   useEffect(() => {
@@ -17,13 +18,14 @@ const RootLayouts = () => {
     });
   }, []);
   return (
-    <div>
+    <div className="bg-white text-black dark:bg-slate-900 dark:text-white transition-colors duration-300">
       <Navbar></Navbar>
       <Outlet></Outlet>
       <AboutMe></AboutMe>
       <Skills></Skills>
-      <Projects></Projects>
+      <ProjectMain />
       <Footer></Footer>
+      <ScrollTop />
     </div>
   );
 };

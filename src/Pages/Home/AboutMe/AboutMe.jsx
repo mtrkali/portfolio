@@ -2,7 +2,7 @@ import hero from '../../../assets/images//WhatsApp Image 2026-01-20 at 5.50.05 P
 const AboutMe = () => {
 
   return (
-    <section data-aos="fade-left" className="bg-linear-to-l from-amber-700 py-20 bg-black/90 text-white w-full md:w-[98%] lg:w-[98%] mx-auto">
+    <section id="about" data-aos="fade-left" className="min-h-screen min-w-screen text-white w-full md:w-[98%] lg:w-[98%] mx-auto flex justify-center items-center relative">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
 
         {/* Left: Image */}
@@ -10,7 +10,7 @@ const AboutMe = () => {
           <img
             src={hero}
             alt="About me"
-            className="w-64 h-64 object-cover rounded-2xl shadow-lg"
+            className="w-74 h-94 object-cover rounded-2xl shadow-lg"
           />
         </div>
 

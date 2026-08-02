@@ -1,0 +1,67 @@
+export const projects = [
+    {
+      id: 1,
+      title: "FoodHub - Full Stack Meal Ordering Platform",
+      status: "Running",
+      type: "Full Stack",
+      description:
+        "Role-based full stack meal ordering platform with Customer, Provider & Admin dashboards. Includes authentication, meal browsing, cart system, and MVC-based REST API.",
+      image: "https://i.ibb.co.com/svW3965y/meal-Management.png",
+      tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
+      live: "https://food-hub-client-theta.vercel.app",
+      github_client: "https://github.com/mtrkali/FoodHubClient",
+      github_server: "https://github.com/mtrkali/FoodhubServer",
+    },
+    {
+      id: 2,
+      title: "MarketPro",
+      status: "In Progress",
+      type: "Frontend",
+      description:
+        "Modern E-commerse website to showcase projects, handle real life problem of business, technical skills and professional background with continuous improvements.",
+      image: "https://i.ibb.co.com/7q84TyV/market-Pro.png",
+      tech: ["nextjs", "Tailwind CSS"],
+      live: "https://market-pro-client.vercel.app",
+      github_client: "https://github.com/mtrkali/marketPro-client",
+      github_server: "#",
+    },
+    {
+      id: 3,
+      title: "Garden Management System",
+      status: "Completed",
+      type: "Full Stack",
+      description:
+        "Real-time garden management system with authentication, role-based access and CRUD operations using Firebase.",
+      image: "https://i.ibb.co.com/67PYCRF2/garden-Management.png",
+      tech: ["React", "Firebase"],
+      live: "https://garden-client-f1349.web.app",
+      github_client: "https://github.com/mtrkali/garden-client",
+      github_server: "https://github.com/mtrkali/garden-server",
+    },
+    {
+      id: 4,
+      title: "Food Expiry Tracker",
+      status: "Completed",
+      type: "Full-stack",
+      description:
+        "Food expiry tracking system with protected routes, authentication, and efficient CRUD operations for managing food items.",
+      image: "https://i.ibb.co.com/wF9Pzy98/expire-Food-Management.png",
+      tech: ["React", "Firebase"],
+      live: "https://dragon-news-breaking-b60e1.web.app",
+      github_client: "https://github.com/mtrkali/food-expiry-client",
+      github_server: "https://github.com/mtrkali/expiry-server",
+    },
+    {
+      id: 5,
+      title: "Sports Club Management System",
+      status: "Completed",
+      type: "Full stack",
+      description:
+        "Club management system with Firebase authentication, user-specific data handling, and structured form validation.",
+      image: "https://i.ibb.co.com/Xr9NXCkd/turp-Management.png",
+      tech: ["React", "Firebase"],
+      live: "https://simple-firebase-auth-c3104.web.app",
+      github_client: "https://github.com/mtrkali/sports-client",
+      github_server: "https://github.com/mtrkali/sports-server",
+    },
+  ];

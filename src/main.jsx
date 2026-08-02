@@ -5,9 +5,12 @@ import App from './App.jsx'
 
 import { RouterProvider } from 'react-router'
 import { router } from './router/router.jsx'
+import { ThmeProvider } from './context/ThemeContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ThmeProvider>
+      <RouterProvider router={router} />
+    </ThmeProvider>
   </StrictMode>,
 )
