@@ -8,9 +8,9 @@ export const projects = [
         "Role-based full stack meal ordering platform with Customer, Provider & Admin dashboards. Includes authentication, meal browsing, cart system, and MVC-based REST API.",
       image: "https://i.ibb.co.com/svW3965y/meal-Management.png",
       tech: ["Next.js", "TypeScript", "Prisma", "PostgreSQL"],
-      live: "https://food-hub-client-theta.vercel.app",
-      github_client: "https://github.com/mtrkali/FoodHubClient",
-      github_server: "https://github.com/mtrkali/FoodhubServer",
+      live: "https://meal-ordering-client-nu.vercel.app/",
+      github_client: "https://github.com/mtrkali/mealOrdering-client",
+      github_server: "https://github.com/mtrkali/mealOrdering-server",
     },
     {
       id: 2,
