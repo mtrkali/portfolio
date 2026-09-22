@@ -4,6 +4,10 @@ export default function ProjectCard ({project}) {
         <div
               className="group relative rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-xl hover:scale-[1.03] transition duration-300 shadow-lg"
             >
+              {project.isLatest &&
+              <div className="absolute -top-2 -left-2 z-50">
+                <p className=" px-6 py-1 rounded-full bg-amber-500 animate animate-pulse">latest</p>
+              </div>}
               {/* Image */}
               <div className="overflow-hidden">
                 <img

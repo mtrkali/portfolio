@@ -11,6 +11,7 @@ export const projects = [
       live: "https://meal-ordering-client-nu.vercel.app/",
       github_client: "https://github.com/mtrkali/mealOrdering-client",
       github_server: "https://github.com/mtrkali/mealOrdering-server",
+      isLatest: true,
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ export const projects = [
       live: "https://market-pro-client.vercel.app",
       github_client: "https://github.com/mtrkali/marketPro-client",
       github_server: "#",
+      isLatest: false
     },
     {
       id: 3,
@@ -50,6 +52,7 @@ export const projects = [
       live: "https://dragon-news-breaking-b60e1.web.app",
       github_client: "https://github.com/mtrkali/food-expiry-client",
       github_server: "https://github.com/mtrkali/expiry-server",
+      isLatest: false,
     },
     {
       id: 5,
@@ -63,5 +66,6 @@ export const projects = [
       live: "https://simple-firebase-auth-c3104.web.app",
       github_client: "https://github.com/mtrkali/sports-client",
       github_server: "https://github.com/mtrkali/sports-server",
+      isLatest: false
     },
   ];
