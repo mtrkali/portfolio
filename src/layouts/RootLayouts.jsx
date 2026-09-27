@@ -7,6 +7,11 @@ import Aos from "aos";
 import Footer from "../Pages/Home/Footer/Footer";
 import ScrollTop from "../Pages/Sahared/ScrollTop";
 import { ProjectMain } from "../Pages/Home/Projects/ProjectMain";
+import DeveloperJourney from "../Pages/Home/developerJourney/developerJourney";
+import Services from "../Pages/Home/Services/Services";
+import HowIWork from "../Pages/Home/HowIWork/HowIWork";
+import WhyWorkWithMe from "../Pages/Home/WhyWorkWithMe/WhyWorkWithMe";
+import Contact from "../Pages/Home/Contact/Contact";
 
 const RootLayouts = () => {
   useEffect(() => {
@@ -24,6 +29,15 @@ const RootLayouts = () => {
       <AboutMe></AboutMe>
       <Skills></Skills>
       <ProjectMain />
+      <DeveloperJourney />
+      <Services />
+
+<HowIWork />
+
+<WhyWorkWithMe />
+
+<Contact />
+
       <Footer></Footer>
       <ScrollTop />
     </div>
