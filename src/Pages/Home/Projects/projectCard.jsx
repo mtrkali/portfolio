@@ -23,14 +23,22 @@ export default function ProjectCard({ project }) {
       "
     >
       {/* ================= LATEST BADGE ================= */}
-      {project.isLatest && (
-        <div className="absolute left-4 top-4 z-20">
-          <div className="flex items-center gap-1.5 rounded-full border border-emerald-400/30 bg-emerald-500/90 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-black shadow-lg shadow-emerald-500/20">
-            <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-black" />
-            Latest Project
+      
+        <div className="absolute left-0 top-0 z-20 animate animate-pulse">
+          <div className="flex items-center gap-1.5 rounded-full border border-emerald-400/30 bg-green-500 px-3 py-1 text-lg font-bold uppercase tracking-wider text-black/70 shadow-lg shadow-emerald-500/20">
+            <span className="h-1.5 w-1.5  rounded-full bg-black" />
+            {project.label}
           </div>
         </div>
-      )}
+    
+
+      <div className="absolute right-0 top-0 z-20">
+          <div className="flex items-center gap-1.5 rounded-full border border-emerald-400/30 bg-amber-500 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-black shadow-lg shadow-emerald-500/20">
+            <span className="h-1.5 w-1.5 rounded-full bg-black" />
+            {project.id}
+          </div>
+        </div>
+      
 
       {/* ================= IMAGE ================= */}
       <div className="relative h-56 overflow-hidden">
@@ -65,7 +73,7 @@ export default function ProjectCard({ project }) {
             {project.status}
           </span>
 
-          <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-medium text-gray-400">
+          <span className="rounded-full border border-white bg-white/5 px-3 py-1 text-sm font-medium text-gray-400 animate animate-bounce">
             {project.type}
           </span>
         </div>
