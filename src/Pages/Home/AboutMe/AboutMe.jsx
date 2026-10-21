@@ -1,6 +1,6 @@
 import { Download, GraduationCap, Languages, Code2 } from "lucide-react";
 import { motion } from "framer-motion";
-import hero from "../../../assets/images/WhatsApp Image 2026-01-20 at 5.50.05 PM.jpeg";
+import hero from "../../../assets/images/hero2.png";
 
 const AboutMe = () => {
   return (
