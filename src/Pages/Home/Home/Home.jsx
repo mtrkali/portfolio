@@ -374,9 +374,9 @@ to-lime-400
                 bg-slate-950
                 border-4 border-slate-950
               "
-            >
+            > 
               <img
-                src="https://i.ibb.co.com/HptNyC8L/file-00000000fddc820dbba21a7ba3348f10-1.jpg"
+                src="https://i.ibb.co.com/zTzcDTGh/Professional-Portrait-in-a-Circular-Frame.png"
                 className="
                   w-full h-full
                   object-cover
