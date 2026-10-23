@@ -455,12 +455,15 @@ const AboutMe = () => {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/uc?export=download&id=1Ga3eE31Cc2fOFLT0syfeTRCNjuosInLq",
-                "_blank"
-              )
-            }
+            
+onClick={() =>
+  window.open(
+    "https://drive.google.com/uc?export=download&id=1ehhDAy7hieoTVLI9rheGCFqWU-B1053q",
+    "_blank"
+  )
+}
+
+
             className="
               mt-8
               inline-flex

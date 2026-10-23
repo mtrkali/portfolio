@@ -167,12 +167,14 @@ to-lime-400
               >
                 {/* Download CV */}
                 <button
-                  onClick={() =>
-                    window.open(
-                      "https://drive.google.com/uc?export=download&id=1PNIxwiegtnPZwAbNFSAJn_SeWMT9RKGp",
-                      "_blank"
-                    )
-                  }
+                  
+onClick={() =>
+  window.open(
+    "https://drive.google.com/uc?export=download&id=1ehhDAy7hieoTVLI9rheGCFqWU-B1053q",
+    "_blank"
+  )
+}
+
                   className="
                     group
                     flex items-center gap-2
@@ -197,12 +199,7 @@ to-lime-400
 
                 {/* Resume */}
                 <button
-                  onClick={() =>
-                    window.open(
-                      "https://drive.google.com/uc?export=download&id=1Ga3eE31Cc2fOFLT0syfeTRCNjuosInLq",
-                      "_blank"
-                    )
-                  }
+                  onClick={() => window.open( "https://drive.google.com/uc?export=download&id=1ehhDAy7hieoTVLI9rheGCFqWU-B1053q", "_blank" ) }
                   className="
                     group
                     flex items-center gap-2
