@@ -71,49 +71,49 @@ export const projects = [
     github_client: "https://github.com/mtrkali/sports-client",
     github_server: "https://github.com/mtrkali/sports-server"
   },
-  {
-    id: 4,
-    title: "Food Expiry Tracker",
-    status: "Completed",
-    type: "Full-stack",
-    label: "Beginner",
-    description:
-      "Food expiry tracking system with protected routes, authentication, and efficient CRUD operations for managing food items.",
-    image: "https://i.ibb.co.com/wF9Pzy98/expire-Food-Management.png",
-    tech: [
-      "React",
-      "Firebase",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT"
-    ],
-    live: "https://dragon-news-breaking-b60e1.web.app",
-    github_client: "https://github.com/mtrkali/food-expiry-client",
-    github_server: "https://github.com/mtrkali/expiry-server"
-  },
-  {
-    id: 5,
-    title: "Garden Management System",
-    status: "Completed",
-    type: "Full Stack",
-    label: "Beginner",
-    description:
-      "Real-time garden management system with authentication, role-based access and CRUD operations using Firebase.",
-    image: "https://i.ibb.co.com/67PYCRF2/garden-Management.png",
-    tech: [
-      "React",
-      "Firebase",
-      "Tailwind CSS",
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "JWT"
-    ],
-    live: "https://garden-client-f1349.web.app",
-    github_client: "https://github.com/mtrkali/garden-client",
-    github_server: "https://github.com/mtrkali/garden-server"
-  }
+  // {
+  //   id: 4,
+  //   title: "Food Expiry Tracker",
+  //   status: "Completed",
+  //   type: "Full-stack",
+  //   label: "Beginner",
+  //   description:
+  //     "Food expiry tracking system with protected routes, authentication, and efficient CRUD operations for managing food items.",
+  //   image: "https://i.ibb.co.com/wF9Pzy98/expire-Food-Management.png",
+  //   tech: [
+  //     "React",
+  //     "Firebase",
+  //     "Tailwind CSS",
+  //     "Node.js",
+  //     "Express",
+  //     "MongoDB",
+  //     "JWT"
+  //   ],
+  //   live: "https://dragon-news-breaking-b60e1.web.app",
+  //   github_client: "https://github.com/mtrkali/food-expiry-client",
+  //   github_server: "https://github.com/mtrkali/expiry-server"
+  // },
+  // {
+  //   id: 5,
+  //   title: "Garden Management System",
+  //   status: "Completed",
+  //   type: "Full Stack",
+  //   label: "Beginner",
+  //   description:
+  //     "Real-time garden management system with authentication, role-based access and CRUD operations using Firebase.",
+  //   image: "https://i.ibb.co.com/67PYCRF2/garden-Management.png",
+  //   tech: [
+  //     "React",
+  //     "Firebase",
+  //     "Tailwind CSS",
+  //     "Node.js",
+  //     "Express",
+  //     "MongoDB",
+  //     "JWT"
+  //   ],
+  //   live: "https://garden-client-f1349.web.app",
+  //   github_client: "https://github.com/mtrkali/garden-client",
+  //   github_server: "https://github.com/mtrkali/garden-server"
+  // }
 ];
 
